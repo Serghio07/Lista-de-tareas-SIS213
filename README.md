@@ -19,6 +19,7 @@ Para crear este tipo de programa tipo agenda en Python que se ejecute en la term
 5. *Funcionalidad de eliminar tarea*: Permite al usuario eliminar una tarea seleccionada de la lista.
 
 
-Los integrantes son : RODRIGO CAMILO MENDEZ GALLARDO
+Los integrantes son : 
+RODRIGO CAMILO MENDEZ GALLARDO
 SERGIO TICONA MAMANI
 
