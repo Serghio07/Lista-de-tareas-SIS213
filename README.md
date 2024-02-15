@@ -20,6 +20,8 @@ Para crear este tipo de programa tipo agenda en Python que se ejecute en la term
 
 
 Los integrantes son : 
+
 RODRIGO CAMILO MENDEZ GALLARDO
+
 SERGIO TICONA MAMANI
 
