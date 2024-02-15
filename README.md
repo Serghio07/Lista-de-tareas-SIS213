@@ -1,1 +1,2 @@
-# Lista-de-tareas-SIS213
+### Lista-de-tareas-SIS213
+##Analisis del problema
