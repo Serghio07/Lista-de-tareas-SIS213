@@ -2,15 +2,15 @@ class NotasApp:
     def __init__(self):
         self.tareas = []
 
-    def mostrar_menu_principal(self):
-        print("----- TUS NOTAS -----")
+    def mostrar_menu_principal(self):    # Este es el menu para que el usuario escoja 
+        print("------------ TUS NOTAS ----------")
         print("1. Agregar Tarea")
         print("2. Ver Notas")
         print("3. Editar Tarea")
         print("4. Eliminar Tarea")
         print("5. Salir")
 
-    def agregar_tarea(self):
+    def agregar_tarea(self):    #EL USUARIO PODRA AÑADIR  
         print("\n--- Agregar Tarea ---")
         titulo = input("Título: ")
         descripcion = input("Descripción: ")
@@ -19,13 +19,13 @@ class NotasApp:
         self.tareas.append(tarea)
         print("Tarea agregada con éxito!")
 
-    def ver_tareas(self):
+    def ver_tareas(self):    #EL USUARIO AGREGARA UNA TAREA EN LA LISTA
         print("\n--- Lista de Tareas ---")
         for i, tarea in enumerate(self.tareas, start=1):
             print(f"{i}. Título: {tarea['Título']}, Descripción: {tarea['Descripción']}, Fecha: {tarea['Fecha']}")
         print()
 
-    def editar_tarea(self):
+    def editar_tarea(self):    #EL USUARIO PODRA  EDITAR SUS TAREAS
         self.ver_tareas()
         opcion = int(input("Seleccione el número de tarea a editar (0 para cancelar): "))
         if opcion == 0:
@@ -40,7 +40,7 @@ class NotasApp:
         else:
             print("Número de tarea inválido.")
 
-    def eliminar_tarea(self):
+    def eliminar_tarea(self):   #EL USUSARIO PODRA ELIMINAR TAREAS QUE DESEE
         self.ver_tareas()
         opcion = int(input("Seleccione el número de tarea a eliminar (0 para cancelar): "))
         if opcion == 0:
@@ -51,7 +51,7 @@ class NotasApp:
         else:
             print("Número de tarea inválido.")
 
-    def ejecutar(self):
+    def ejecutar(self):  
         while True:
             self.mostrar_menu_principal()
             opcion = input("Seleccione una opción: ")
@@ -74,3 +74,4 @@ class NotasApp:
 if __name__ == "__main__":
     app = NotasApp()
     app.ejecutar()
+    
